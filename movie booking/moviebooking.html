@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Booking</title>
+    <style>
+        /* Center aligning total booking */
+        .total-booking {
+            text-align: center;
+        }
+        .searchSlot {
+            text-align: center;
+        }
+        /* Aligning user input to the left */
+        .user-input {
+            display: flex;
+            align-items: center;
+        }
+        .user-input label {
+            margin-right: 10px;
+        }
+    </style>
+    <script src="moviebooking.js" defer></script> <!-- Including JavaScript file -->
+</head>
+<body>
+    <div class="total-booking">
+        <h1>Movie Booking</h1> <!-- Heading for Movie Booking -->
+        <p>Total Booking: <span id="totalBooking">0</span></p> <!-- Display total bookings -->
+    </div>
+    <div class="searchSlot">
+        <label for="searchSlot">Find Slot:</label>
+        <input type="text" id="searchSlot"> <!-- Text box for searching the slot -->
+    </div>
+    <div class="user-input">
+        <label for="username">Username:</label>
+        <input type="text" id="username"> <!-- Input field for username -->
+        <label for="seatNumber">Seat Number:</label>
+        <input type="text" id="seatNumber"> <!-- Input field for seat number -->
+        <button id="addButton">Add</button> <!-- Add button -->
+    </div>
+    <div id="userDetails">
+        <!-- User details will be displayed here -->
+    </div>
+</body>
+</html>
